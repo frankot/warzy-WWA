@@ -1,0 +1,25 @@
+{
+  "name": "fromHeadTW",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "prod": "NODE_ENV=production npx tailwindcss -i ./css/tailwind.css -o ./dist/tailwind.mind.css",
+    "compile": "npx tailwindcss -i css/tailwind.css -o dist/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.10",
+    "vite": "^2.5.3"
+  },
+  "dependencies": {
+    "win-node-env": "^0.4.0"
+  }
+}

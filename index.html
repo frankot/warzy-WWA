@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tail">
+    <title>Document</title>
+
+    <style>
+        .nav {
+            position: fixed;
+            /* Stay on top */
+            z-index: 1;
+        }
+
+        /* scrollbar width   */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* track color */
+        ::-webkit-scrollbar-track {
+            background: #C1CFC0;
+        }
+
+        /* handle */
+        ::-webkit-scrollbar-thumb {
+            background: #b0bdaf;
+            border-radius: 0.375rem
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9aa39a;
+        }
+    </style>
+</head>
+
+<body class="font-custom bg-nature-4 text-nature-3 xl:text-lg">
+    <!-- PAGE wRAPPER -->
+    <div class="">
+        <!-- NAV-BAR -->
+        <div
+            class=" bg-nature-2  text-gray-800 sm:mb-0 w-full h-14 md:w-auto md:h-screen md:flex flex-col justify-between md:rounded-br-md nav top-0">
+
+            <!-- LOGO -->
+            <div class=" ml-2 md:ml-3 relative">
+                <img src="img/pnghut_vegetable-sandwich-food-clip-art-gastronomy-fruit.png" alt="leaf-logo"
+                    class="mt-2  h-10 sm:h-12 absolute">
+                <h1
+                    class="pl-16 md:pl-12 pt-3 md:pt-8 text-xl md:pr-3  md:text-lg lg:text-2xl lg:tracking-wider tracking-wide md:hover:text-nature-4  md:border-b-2 border-nature-4 xl:text-4xl break-normal">
+                    WARZY-wwa</h1>
+                <!-- KONTO -->
+                <div class="btn ml-3 hidden md:block">
+                    <svg class="h-6 absolute left-0 bottom-1 xl:bottom-custom" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
+                            clip-rule="evenodd"></path>
+                    </svg><a href="" class="ml-6">Konto</a>
+                </div>
+                <!-- ZAMÓWIENIA -->
+                <div class="btn ml-3 hidden md:block"><svg class="h-6 absolute left-0 bottom-0 xl:bottom-custom"
+                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path>
+                        <path fill-rule="evenodd"
+                            d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <a href=""><span class="ml-6">Zamówienia</span></a>
+                </div>
+
+            </div>
+            <!-- HAMBURGER MENU -->
+            <div class="mt-3 md:hidden absolute  top-0 right-5">
+                <button type="button" class="text-gray-800 focus:text-nat ">
+                    <svg class="w-10  fill-current" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- KOSZYK -->
+            <div class="ml-2 hidden md:inline-block md:relative lg:ml-6 xl:ml-10">
+                <div>
+                    <h2 class="ml-10 uppercase ">Koszyk</h2>
+                    <svg class="h-6 absolute left-3 top-0 xl:top-custom" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="rounded-md bg-nature-1 inline-block bg-opacity-30">
+                    <ul class="ml-5">
+                        <li>item-1</li>
+                        <li>item-2</li>
+                        <li>item-3</li>
+                        <li>item-4</li>
+                    </ul>
+                    <div class="ml-4 text-sm opacity-90 hover:opacity-100 my-1 ">SUMA: 34.50zł</div>
+                </div>
+                <br>
+                <div
+                    class="text-sm bg-nature-1 mx-3 my-1 inline-block rounded py-1 px-2 tracking-wide hover:bg-gray-400 cursor-pointer lg:text-base">
+                    DO KASY
+                </div>
+            </div>
+            <!-- sidebar-bottom wrapper -->
+            <div class="ml-4 mb-4 md:inline-block hidden sm:bottom-16 sm:ml-6 md:ml-8 md:mb-6">
+                <ul>
+                    <!-- USTAWIENIA -->
+                    <li class="btn">
+                        <svg class="h-5 absolute bottom-custom xl:bottom-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <a href=""><span class="ml-5"> Ustawienia</span></a>
+                    </li>
+                    <!-- WYLOGUJ -->
+                    <li class="btn hover:text-red-400">
+                        <svg class="h-5 absolute left-1 bottom-custom xl:bottom-1" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <a href=""><span class="ml-6">Wyloguj</span></a>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <main class="px-6 md:px-10 mt-20 md:mt-5  md:ml-44 lg:ml-56  xl:ml-72">
+            <!-- CARDS -->
+            <div class="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 grid-cols-2  gap-3 mt-4 sm:gap-4">
+                <div class="card">
+                    <h1 class="card-header">Burak polski</h1>
+                    <img src="/img/burak.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                    <span class="btnCart"><svg class="h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg></span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Marchew</h1>
+                    <img src="/img/carrot.jpeg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Cebula</h1>
+                    <img src="/img/cebula.jpeg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Jabłka</h1>
+                    <img src="/img/jablka.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Ogórek</h1>
+                    <img src="/img/ogorek.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Seler</h1>
+                    <img src="/img/seler.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Ziemniak</h1>
+                    <img src="/img/ziemniak.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Burak polski</h1>
+                    <img src="/img/burak.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Marchew</h1>
+                    <img src="/img/carrot.jpeg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Cebula</h1>
+                    <img src="/img/cebula.jpeg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Jabłka</h1>
+                    <img src="/img/jablka.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Ogórek</h1>
+                    <img src="/img/ogorek.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Seler</h1>
+                    <img src="/img/seler.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Ziemniak</h1>
+                    <img src="/img/ziemniak.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Marchew</h1>
+                    <img src="/img/carrot.jpeg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Cebula</h1>
+                    <img src="/img/cebula.jpeg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Jabłka</h1>
+                    <img src="/img/jablka.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+                <div class="card">
+                    <h1 class="card-header">Ogórek</h1>
+                    <img src="/img/ogorek.jpg" alt="" class="h-full w-full object-cover">
+                    <span class="badge">12zł/kg</span>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class=" bg-gray-400 inline mt-2 rounded-md px-2 cursor-pointer hover:bg-gray-600 ">Załaduj więcej
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
